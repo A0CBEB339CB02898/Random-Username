@@ -4,9 +4,35 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>github.A0CBEB339CB02898</groupId>
-    <artifactId>Random-Username</artifactId>
-    <version>1.0</version>
+    <groupId>io.github.a0cbeb339cb02898</groupId>
+    <artifactId>random-username</artifactId>
+    <version>1.1.0</version>
+    <packaging>jar</packaging>
+
+    <name>Random-Username</name>
+    <description>A powerful random username generator library supporting multiple modes, styles, and languages (Chinese and English)</description>
+    <url>https://github.com/A0CBEB339CB02898/Random-Username</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>A0CBEB339CB02898</id>
+            <name>Developer</name>
+            <url>https://github.com/A0CBEB339CB02898</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/A0CBEB339CB02898/Random-Username.git</connection>
+        <developerConnection>scm:git:https://github.com/A0CBEB339CB02898/Random-Username.git</developerConnection>
+        <url>https://github.com/A0CBEB339CB02898/Random-Username</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -47,4 +73,62 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub A0CBEB339CB02898 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/A0CBEB339CB02898/Random-Username</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+
+            <!-- Maven Source Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Maven Javadoc Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <source>8</source>
+                            <doclint>none</doclint>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
+
