@@ -1,0 +1,17 @@
+﻿[STYLE_JIANGHU]
+WildRanger_{random}
+SwordMaster_{N}
+WanderingSoul_{random}
+SilentShadow_{N}
+Knight_{random}
+ShadowWarrior_{N}
+MasterMind_{random}
+BladeRunner_{N}
+HeroicAge_{random}
+AncientWarrior_{N}
+LoneWolf_{random}
+StormBringer_{N}
+GhostInShell_{random}
+DragonSlayer_{N}
+PhoenixRising_{random}
+

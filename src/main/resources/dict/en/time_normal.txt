@@ -1,0 +1,12 @@
+﻿[TIME_NORMAL]
+Commoner_{random}
+Passerby_{N}
+OrdinarySoul_{random}
+JustMe_{N}
+DailyUser_{random}
+WorkHard_{N}
+StayActive_{random}
+LifeStyle_{N}
+OnTheWay_{random}
+SimpleLife_{N}
+

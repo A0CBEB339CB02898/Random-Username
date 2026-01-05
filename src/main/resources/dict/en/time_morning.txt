@@ -1,0 +1,12 @@
+﻿[TIME_MORNING]
+EarlyBird_{random}
+MorningWalker_{N}
+SunriseSeeker_{random}
+MorningDew_{N}
+WakeUp_{random}
+BreakfastTime_{N}
+MorningSun_{random}
+FreshStart_{N}
+NewDay_{random}
+MorningCoffee_{N}
+

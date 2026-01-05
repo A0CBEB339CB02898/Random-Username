@@ -1,0 +1,17 @@
+﻿[STYLE_ATTITUDE]
+DareToBe_{random}
+SimplyMe_{N}
+BornToRun_{random}
+NeverGiveUp_{N}
+WildAndFree_{random}
+JustWatchMe
+BreakTheRules_{N}
+BeYourself_{random}
+StayHungry_{N}
+StayFoolish_{random}
+LevelUp_{N}
+GameChanger_{random}
+NoLimits_{N}
+TheOneAndOnly_{random}
+AuthenticMe_{N}
+
