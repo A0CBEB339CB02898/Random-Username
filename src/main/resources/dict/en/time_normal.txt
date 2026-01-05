@@ -1,12 +1,9 @@
 ﻿[TIME_NORMAL]
-Commoner_{random}
-Passerby_{N}
-OrdinarySoul_{random}
-JustMe_{N}
-DailyUser_{random}
-WorkHard_{N}
-StayActive_{random}
-LifeStyle_{N}
-OnTheWay_{random}
-SimpleLife_{N}
+Regular person_{random}
+Ordinary life_{N}
+Working hard_{random}
+Daily grind_{N}
+Normal worker_{random}
+Living the dream_{N}
+Moving forward_{random}
 

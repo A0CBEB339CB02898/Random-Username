@@ -1,17 +1,8 @@
 ﻿[STYLE_EXPLORER]
-ExplorerNo{N}
-SpaceTraveler_{random}
-SceneryLoading_{N}
-NextCorner_{random}
-TrackCapture_{N}
-StarRover_{random}
-GalaxyWalker_{N}
-DeepSpace_{random}
-NewHorizon_{N}
-PathFinder_{random}
-Atlas_{N}
-Voyager_{random}
-Discovery_{N}
-CuriousCat_{random}
-IntoTheUnknown_{N}
+Explorer of worlds_{random}
+Adventure seeker_{N}
+Wanderer_{random}
+Quest master_{N}
+Discovery lover_{random}
+Border crosser_{N}
 

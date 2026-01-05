@@ -1,14 +1,9 @@
 ﻿[TIME_WEEKEND]
-WeekendWarrior_{random}
-HomeBody_{N}
-OutdoorLover_{random}
-FinallyWeekend_{N}
-RelaxMode_{random}
-PartyTime_{N}
-HappyWeekend_{random}
-Recharge_{N}
-SundayVibes_{random}
-LazyDay_{N}
-WeekendGetaway_{random}
-AdventureTime_{N}
+Weekend relaxer_{random}
+Chill master_{N}
+Fun seeker_{random}
+Party animal_{N}
+Lazy day lover_{random}
+Freedom feeler_{N}
+Weekend warrior_{random}
 

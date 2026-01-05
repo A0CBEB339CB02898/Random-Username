@@ -1,12 +1,9 @@
 ﻿[TIME_NOON]
-NoonSun_{random}
-LunchBreak_{N}
-MiddayDreamer_{random}
-HighNoon_{N}
-Sunshine_{random}
-QuickNap_{N}
-BusyNoon_{random}
-LunchTime_{N}
-EnergyBoost_{random}
-GoldenHour_{N}
+Lunch break lover_{random}
+Noon dreamer_{N}
+Midday napper_{random}
+Golden hour seeker_{N}
+Afternoon energy_{random}
+Siesta fan_{N}
+Sunshine absorber_{random}
 

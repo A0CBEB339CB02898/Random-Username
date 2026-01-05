@@ -35,6 +35,7 @@ public class CacheReloadTest {
                 .mode(GenerationMode.NOUN_RANDOM)
                 .wordBankPath(dictFile.getAbsolutePath())
                 .useCache(false)
+                .randomLength(0)
                 .build();
 
         assertEquals("Apple", generator.generate(config));
@@ -54,6 +55,7 @@ public class CacheReloadTest {
                 .mode(GenerationMode.NOUN_RANDOM)
                 .wordBankPath(dictFile.getAbsolutePath())
                 .useCache(true)
+                .randomLength(0)
                 .build();
 
         assertEquals("Cherry", generator.generate(config));
@@ -78,6 +80,7 @@ public class CacheReloadTest {
                 .mode(GenerationMode.NOUN_RANDOM)
                 .wordBankPath(dictFile.getAbsolutePath())
                 .useCache(true)
+                .randomLength(0)
                 .build();
 
         assertEquals("Eggplant", generator.generate(config));

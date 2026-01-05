@@ -1,20 +1,8 @@
 ﻿[STYLE_ROMANTIC]
-WindShape_{random}
-HorizonObserver_{N}
-DawnJourney_{random}
-BornForWild_{N}
-StarryNight_{random}
-GentleBreeze_{N}
-Moonlight_{random}
-SummerRain_{N}
-AutumnLeaf_{random}
-WinterSun_{N}
-SpringFlower_{random}
-EternalFlame_{N}
-SweetDream_{random}
-PureHeart_{N}
-SoftWhisper_{random}
-MagicMoment_{N}
-OceanDeep_{random}
-SkyHigh_{N}
+Romantic dreamer_{random}
+Poetry lover_{N}
+Emotional soul_{random}
+Heart keeper_{N}
+Love believer_{random}
+Beauty chaser_{N}
 

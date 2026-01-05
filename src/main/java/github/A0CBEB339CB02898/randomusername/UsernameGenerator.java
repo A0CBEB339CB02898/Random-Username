@@ -18,8 +18,19 @@ import java.util.concurrent.ConcurrentHashMap;
  * 提供多种生成模式，支持中英文，可配置外部词库
  */
 public class UsernameGenerator {
+    /** 缓存项，包含词库和时间戳 */
+    private static class CacheEntry {
+        WordBank wordBank;
+        long timestamp;
+
+        CacheEntry(WordBank wordBank, long timestamp) {
+            this.wordBank = wordBank;
+            this.timestamp = timestamp;
+        }
+    }
+
     /** 词库缓存 */
-    private final Map<String, WordBank> wordBankCache = new ConcurrentHashMap<>();
+    private final Map<String, CacheEntry> wordBankCache = new ConcurrentHashMap<>();
     /** 策略映射，按生成模式分类 */
     private final Map<GenerationMode, UsernameStrategy> strategies = new HashMap<>();
     
@@ -81,8 +92,26 @@ public class UsernameGenerator {
             return loadWordBankInternal(actualPath, lang);
         }
 
-        // 简化缓存逻辑：直接使用缓存或加载
-        return wordBankCache.computeIfAbsent(cacheKey, key -> loadWordBankInternal(actualPath, lang));
+        // 使用缓存：检查是否需要自动重新加载
+        CacheEntry entry = wordBankCache.get(cacheKey);
+        long currentTimestamp = wordLoader.getTimestamp(actualPath);
+
+        if (entry == null) {
+            // 缓存不存在，加载新词库
+            WordBank wordBank = loadWordBankInternal(actualPath, lang);
+            wordBankCache.put(cacheKey, new CacheEntry(wordBank, currentTimestamp));
+            return wordBank;
+        }
+
+        // 如果获取到时间戳且不是classpath资源（-1），则检查是否需要重新加载
+        if (currentTimestamp > 0 && currentTimestamp != entry.timestamp) {
+            // 文件已更新，重新加载
+            WordBank wordBank = loadWordBankInternal(actualPath, lang);
+            wordBankCache.put(cacheKey, new CacheEntry(wordBank, currentTimestamp));
+            return wordBank;
+        }
+
+        return entry.wordBank;
     }
 
     private WordBank loadWordBankInternal(String path, Language lang) {

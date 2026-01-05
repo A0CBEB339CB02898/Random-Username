@@ -1,15 +1,9 @@
 ﻿[TIME_NIGHT]
-NightOwl_{random}
-MidnightCoder_{N}
-MoonPoet_{random}
-NightWalker_{N}
-StarGazer_{random}
-SilentNight_{N}
-SweetDreams_{random}
-NightLight_{N}
-DreamCatcher_{random}
-DarkSide_{N}
-MoonChild_{random}
-SleepyHead_{N}
-Insomniac_{random}
+Night owl_{random}
+Starry dreamer_{N}
+Moonlight wanderer_{random}
+Evening thinker_{N}
+Night warrior_{random}
+Deep sleep lover_{N}
+Midnight reflector_{random}
 

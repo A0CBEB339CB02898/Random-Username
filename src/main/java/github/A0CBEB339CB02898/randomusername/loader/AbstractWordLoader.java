@@ -46,7 +46,16 @@ public abstract class AbstractWordLoader implements WordLoader {
     protected void merge(WordBank wordBank, BufferedReader reader) throws IOException {
         String line;
         String currentSection = "";
+        boolean isFirstLine = true;
         while ((line = reader.readLine()) != null) {
+            // 移除 BOM 字符（仅在第一行）
+            if (isFirstLine) {
+                if (line.length() > 0 && line.charAt(0) == '\uFEFF') {
+                    line = line.substring(1);
+                }
+                isFirstLine = false;
+            }
+
             line = line.trim();
             if (line.isEmpty() || line.startsWith("#")) {
                 continue;

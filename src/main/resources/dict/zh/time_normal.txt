@@ -1,11 +1,9 @@
 ﻿[TIME_NORMAL]
-普通路人_{random}
-平凡的世界_{N}
+平凡的日常_{random}
+普通路人_{N}
 正在努力中_{random}
 日常生活_{N}
-打工魂_{random}
-普通的开发者_{N}
-坚持就是胜利
-代码搬运工_{random}
-摸鱼中_{N}
-学习使我快乐_{random}
+打工人的梦想_{random}
+默默耕耘着_{N}
+奔向未来的人_{random}
+
