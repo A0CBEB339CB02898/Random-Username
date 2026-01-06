@@ -1,12 +1,15 @@
-package github.A0CBEB339CB02898.randomusername;
+package io.github.A0CBEB339CB02898.randomusername;
 
-import github.A0CBEB339CB02898.randomusername.config.GenerationMode;
-import github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
-import github.A0CBEB339CB02898.randomusername.config.Language;
-import github.A0CBEB339CB02898.randomusername.loader.JsonWordLoader;
-import github.A0CBEB339CB02898.randomusername.loader.WordBankConstants;
-import github.A0CBEB339CB02898.randomusername.model.WordBank;
-import github.A0CBEB339CB02898.randomusername.strategy.*;
+import io.github.A0CBEB339CB02898.randomusername.config.GenerationMode;
+import io.github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
+import io.github.A0CBEB339CB02898.randomusername.config.Language;
+import io.github.A0CBEB339CB02898.randomusername.loader.JsonWordLoader;
+import io.github.A0CBEB339CB02898.randomusername.loader.WordBankConstants;
+import io.github.A0CBEB339CB02898.randomusername.model.WordBank;
+import io.github.A0CBEB339CB02898.randomusername.strategy.*;
+import io.github.A0CBEB339CB02898.randomusername.strategy.SimpleRandomStrategy;
+import io.github.A0CBEB339CB02898.randomusername.strategy.TemplateBasedStrategy;
+import io.github.A0CBEB339CB02898.randomusername.strategy.UsernameStrategy;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package github.A0CBEB339CB02898.randomusername;
+package io.github.A0CBEB339CB02898.randomusername;
 
 /**
  * 用户名生成器异常类

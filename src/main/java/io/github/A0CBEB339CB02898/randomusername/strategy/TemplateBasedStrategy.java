@@ -1,9 +1,9 @@
-package github.A0CBEB339CB02898.randomusername.strategy;
+package io.github.A0CBEB339CB02898.randomusername.strategy;
 
-import github.A0CBEB339CB02898.randomusername.UsernameGeneratorException;
-import github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
-import github.A0CBEB339CB02898.randomusername.config.Style;
-import github.A0CBEB339CB02898.randomusername.model.WordBank;
+import io.github.A0CBEB339CB02898.randomusername.UsernameGeneratorException;
+import io.github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
+import io.github.A0CBEB339CB02898.randomusername.config.Style;
+import io.github.A0CBEB339CB02898.randomusername.model.WordBank;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package github.A0CBEB339CB02898.randomusername.loader;
+package io.github.A0CBEB339CB02898.randomusername.loader;
 
 /**
  * 词库常量定义

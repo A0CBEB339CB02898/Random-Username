@@ -52,8 +52,12 @@
 ## 快速开始
 
 ```java
-import github.A0CBEB339CB02898.randomusername.UsernameGenerator;
-import github.A0CBEB339CB02898.randomusername.config.*;
+import io.randomusername.A0CBEB339CB02898.github.UsernameGenerator;
+import io.github.A0CBEB339CB02898.randomusername.config.GenerationMode;
+import io.github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
+import io.github.A0CBEB339CB02898.randomusername.config.Language;
+import io.github.A0CBEB339CB02898.randomusername.config.Style;
+
 import java.time.LocalDateTime;
 
 public class Example {
@@ -62,48 +66,48 @@ public class Example {
 
         // 1. 前缀 + 随机字符串
         String username1 = generator.generate(
-            GeneratorConfig.builder()
-                .mode(GenerationMode.PREFIX_RANDOM)
-                .prefix("test_")
-                .randomLength(6)
-                .build()
+                GeneratorConfig.builder()
+                        .mode(GenerationMode.PREFIX_RANDOM)
+                        .prefix("test_")
+                        .randomLength(6)
+                        .build()
         );
         System.out.println("PREFIX_RANDOM: " + username1);  // test_abc123
 
         // 2. 形容词 + 名词 + 随机字符串
         String username2 = generator.generate(
-            GeneratorConfig.builder()
-                .mode(GenerationMode.ADJ_NOUN_RANDOM)
-                .language(Language.ZH)
-                .randomLength(4)
-                .build()
+                GeneratorConfig.builder()
+                        .mode(GenerationMode.ADJ_NOUN_RANDOM)
+                        .language(Language.ZH)
+                        .randomLength(4)
+                        .build()
         );
         System.out.println("ADJ_NOUN_RANDOM: " + username2);  // 聪慧的鲨鱼_aBc2
 
         // 3. 名词 + 随机字符串
         String username3 = generator.generate(
-            GeneratorConfig.builder()
-                .mode(GenerationMode.NOUN_RANDOM)
-                .language(Language.EN)
-                .build()
+                GeneratorConfig.builder()
+                        .mode(GenerationMode.NOUN_RANDOM)
+                        .language(Language.EN)
+                        .build()
         );
         System.out.println("NOUN_RANDOM: " + username3);  // elephant_xY9k
 
         // 4. 基于时间的生成
         String username4 = generator.generate(
-            GeneratorConfig.builder()
-                .mode(GenerationMode.TIME_BASED)
-                .registrationTime(LocalDateTime.now())
-                .build()
+                GeneratorConfig.builder()
+                        .mode(GenerationMode.TIME_BASED)
+                        .registrationTime(LocalDateTime.now())
+                        .build()
         );
         System.out.println("TIME_BASED: " + username4);
 
         // 5. 基于风格的生成
         String username5 = generator.generate(
-            GeneratorConfig.builder()
-                .mode(GenerationMode.STYLE_BASED)
-                .style(Style.EXPLORER)
-                .build()
+                GeneratorConfig.builder()
+                        .mode(GenerationMode.STYLE_BASED)
+                        .style(Style.EXPLORER)
+                        .build()
         );
         System.out.println("STYLE_BASED: " + username5);
     }

@@ -1,4 +1,4 @@
-package github.A0CBEB339CB02898.randomusername.config;
+package io.github.A0CBEB339CB02898.randomusername.config;
 
 /**
  * 语言选项

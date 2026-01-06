@@ -1,10 +1,10 @@
-package github.A0CBEB339CB02898.randomusername.loader;
+package io.github.A0CBEB339CB02898.randomusername.loader;
 
 import com.google.gson.Gson;
-import github.A0CBEB339CB02898.randomusername.UsernameGeneratorException;
-import github.A0CBEB339CB02898.randomusername.config.Language;
-import github.A0CBEB339CB02898.randomusername.model.WordBank;
-import github.A0CBEB339CB02898.randomusername.model.WordBankConfig;
+import io.github.A0CBEB339CB02898.randomusername.UsernameGeneratorException;
+import io.github.A0CBEB339CB02898.randomusername.config.Language;
+import io.github.A0CBEB339CB02898.randomusername.model.WordBank;
+import io.github.A0CBEB339CB02898.randomusername.model.WordBankConfig;
 
 import java.io.*;
 import java.net.HttpURLConnection;

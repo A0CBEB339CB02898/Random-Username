@@ -1,8 +1,9 @@
 package github.A0CBEB339CB02898.randomusername;
 
-import github.A0CBEB339CB02898.randomusername.config.GenerationMode;
-import github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
-import github.A0CBEB339CB02898.randomusername.config.Language;
+import io.github.A0CBEB339CB02898.randomusername.UsernameGenerator;
+import io.github.A0CBEB339CB02898.randomusername.config.GenerationMode;
+import io.github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
+import io.github.A0CBEB339CB02898.randomusername.config.Language;
 import org.junit.Test;
 import java.time.LocalDateTime;
 import static org.junit.Assert.*;

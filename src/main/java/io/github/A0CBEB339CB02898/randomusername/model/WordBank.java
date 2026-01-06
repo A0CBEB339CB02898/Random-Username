@@ -1,4 +1,4 @@
-package github.A0CBEB339CB02898.randomusername.model;
+package io.github.A0CBEB339CB02898.randomusername.model;
 
 import lombok.Data;
 import java.util.ArrayList;
