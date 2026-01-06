@@ -29,9 +29,9 @@ public class GeneratorConfig {
     @Builder.Default
     private String prefix = "user_";
     
-    /** 随机字符串长度，默认为 4 */
+    /** 随机字符串长度，默认为 6 */
     @Builder.Default
-    private int randomLength = 4;
+    private int randomLength = 6;
     
     /** 注册时间，用于时间基准模式，默认为当前时间 */
     @Builder.Default
