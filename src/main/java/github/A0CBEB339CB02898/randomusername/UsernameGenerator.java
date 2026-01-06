@@ -83,7 +83,7 @@ public class UsernameGenerator {
 
         // 确定实际路径和缓存 Key
         String actualPath = (path != null && !path.isEmpty()) ? path :
-                (WordBankConstants.CLASSPATH_PREFIX + "dict/");
+                (WordBankConstants.CLASSPATH_PREFIX + "random-username-dict/");
         String cacheKey = (path != null && !path.isEmpty()) ? path : "DEFAULT_" + lang.name();
 
         // 如果不使用缓存，直接加载

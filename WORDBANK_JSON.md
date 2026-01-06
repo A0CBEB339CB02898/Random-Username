@@ -210,8 +210,8 @@ AutoWordLoader (自动格式检测)
 ## 📚 相关文档
 
 - [README.md](./README.md) - 项目主文档
-- [wordbank-zh.json](./src/main/resources/dict/wordbank-zh.json) - 中文词库
-- [wordbank-en.json](./src/main/resources/dict/wordbank-en.json) - 英文词库
+- [wordbank-zh.json](src/main/resources/random-username-dict/wordbank-zh.json) - 中文词库
+- [wordbank-en.json](src/main/resources/random-username-dict/wordbank-en.json) - 英文词库
 
 ---
 

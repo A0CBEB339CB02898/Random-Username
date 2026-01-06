@@ -146,7 +146,7 @@ public class Example {
 
 ```java
 GeneratorConfig config = GeneratorConfig.builder()
-        .wordBankPath("C:/path/to/your/dict/") // 传入目录或文件路径，支持 http://...
+        .wordBankPath("C:/path/to/your/random-username-dict/") // 传入目录或文件路径，支持 http://...
         .build();
 ```
 
