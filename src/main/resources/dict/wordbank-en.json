@@ -1,0 +1,144 @@
+{
+  "language": "en",
+  "version": "1.0.0",
+  "description": "English word bank for generating personalized usernames",
+
+  "basic": {
+    "adjectives": [
+      "Happy", "Smart", "Brave", "Creative", "Calm",
+      "Funny", "Bold", "Free", "Gentle", "Curious",
+      "Dynamic", "Kind", "Clever", "Wild", "Dreamy"
+    ],
+    "nouns": [
+      "Cat", "Dog", "Panda", "Fox", "Dolphin", "Elephant",
+      "Developer", "Designer", "Engineer", "Traveler",
+      "Foodie", "Dreamer", "Coder", "Artist", "Warrior",
+      "Mentor", "Pioneer", "Explorer"
+    ],
+    "prefixes": [
+      "user_", "cool_", "super_", "smart_", "happy_", "lucky_",
+      "awesome_", "swift_", "bright_", "cosmic_", "sunny_",
+      "brave_", "wild_", "epic_", "pro_"
+    ]
+  },
+
+  "styles": {
+    "explorer": {
+      "name": "Explorer",
+      "description": "Emphasizing journey and exploration",
+      "emoji": "🌍",
+      "templates": [
+        "Explorer of worlds_{random}",
+        "Adventure seeker_{N}",
+        "Wanderer_{random}",
+        "Quest master_{N}",
+        "Discovery lover_{random}",
+        "Border crosser_{N}"
+      ]
+    },
+    "attitude": {
+      "name": "Attitude",
+      "description": "Emphasizing courage and vitality",
+      "emoji": "🔥",
+      "templates": [
+        "Attitude king_{random}",
+        "Rebel spirit_{N}",
+        "Unique existence_{random}",
+        "Self made man_{N}",
+        "Unbound soul_{random}",
+        "Confidence maker_{N}"
+      ]
+    },
+    "jianghu": {
+      "name": "Jianghu",
+      "description": "Martial arts and chivalry themed",
+      "emoji": "🗡️",
+      "templates": [
+        "Wandering swordsman_{random}",
+        "Honor keeper_{N}",
+        "Martial master_{random}",
+        "Justice seeker_{N}",
+        "Noble warrior_{random}",
+        "Heroic legend_{N}"
+      ]
+    },
+    "romantic": {
+      "name": "Romantic",
+      "description": "Poetic and artistic atmosphere",
+      "emoji": "🎨",
+      "templates": [
+        "Romantic dreamer_{random}",
+        "Feeling keeper_{N}",
+        "Poetic soul_{random}",
+        "Dream chaser_{N}",
+        "Gentle spirit_{random}",
+        "Beauty guardian_{N}"
+      ]
+    }
+  },
+
+  "times": {
+    "morning": {
+      "name": "Morning",
+      "timeRange": "06:00-10:00",
+      "description": "Morning time, full of energy and hope",
+      "templates": [
+        "Early bird_{random}",
+        "Morning glory_{N}",
+        "Rise and shine_{random}",
+        "Breakfast champion_{N}",
+        "New day new start_{random}",
+        "Morning warrior_{N}",
+        "Sunrise seeker_{random}"
+      ]
+    },
+    "noon": {
+      "name": "Noon",
+      "timeRange": "11:00-14:00",
+      "description": "Noon time, comfortable and relaxed",
+      "templates": [
+        "Noon relaxer_{random}",
+        "Lunch lover_{N}",
+        "Midday dreamer_{random}",
+        "Afternoon chiller_{N}",
+        "Sunshine enjoyer_{random}"
+      ]
+    },
+    "night": {
+      "name": "Night",
+      "timeRange": "18:00-23:00",
+      "description": "Night time, peaceful and mysterious",
+      "templates": [
+        "Night walker_{random}",
+        "Star gazer_{N}",
+        "Moonlight dancer_{random}",
+        "Night owl_{N}",
+        "Midnight thinker_{random}",
+        "Evening dreamer_{N}"
+      ]
+    },
+    "weekend": {
+      "name": "Weekend",
+      "description": "Weekend time, relaxing and joyful",
+      "templates": [
+        "Weekend warrior_{random}",
+        "Lazy saturday_{N}",
+        "Chill master_{random}",
+        "Weekend vibes_{N}",
+        "Relaxation mode_{random}"
+      ]
+    },
+    "normal": {
+      "name": "Normal",
+      "description": "Normal daily time",
+      "templates": [
+        "Ordinary person_{random}",
+        "Daily grinder_{N}",
+        "Work in progress_{random}",
+        "Regular guy_{N}",
+        "Making it happen_{random}"
+      ]
+    }
+  }
+}
+

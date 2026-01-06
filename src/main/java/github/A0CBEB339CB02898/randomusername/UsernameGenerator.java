@@ -3,9 +3,10 @@ package github.A0CBEB339CB02898.randomusername;
 import github.A0CBEB339CB02898.randomusername.config.GenerationMode;
 import github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
 import github.A0CBEB339CB02898.randomusername.config.Language;
+import github.A0CBEB339CB02898.randomusername.loader.AutoWordLoader;
+import github.A0CBEB339CB02898.randomusername.loader.JsonWordLoader;
 import github.A0CBEB339CB02898.randomusername.loader.WordBankConstants;
 import github.A0CBEB339CB02898.randomusername.loader.WordLoader;
-import github.A0CBEB339CB02898.randomusername.loader.UnifiedWordLoader;
 import github.A0CBEB339CB02898.randomusername.model.WordBank;
 import github.A0CBEB339CB02898.randomusername.strategy.*;
 
@@ -34,8 +35,8 @@ public class UsernameGenerator {
     /** 策略映射，按生成模式分类 */
     private final Map<GenerationMode, UsernameStrategy> strategies = new HashMap<>();
     
-    /** 统一词库加载器 */
-    private final WordLoader wordLoader = new UnifiedWordLoader();
+    /** JSON词库加载器 */
+    private final WordLoader wordLoader = new JsonWordLoader();
 
     /**
      * 构造函数，初始化生成策略
@@ -84,7 +85,7 @@ public class UsernameGenerator {
 
         // 确定实际路径和缓存 Key
         String actualPath = (path != null && !path.isEmpty()) ? path :
-                (lang == Language.ZH ? WordBankConstants.CLASSPATH_PREFIX + "dict/zh/" : WordBankConstants.CLASSPATH_PREFIX + "dict/en/");
+                (WordBankConstants.CLASSPATH_PREFIX + "dict/");
         String cacheKey = (path != null && !path.isEmpty()) ? path : "DEFAULT_" + lang.name();
 
         // 如果不使用缓存，直接加载
