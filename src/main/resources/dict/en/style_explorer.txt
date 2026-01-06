@@ -1,8 +1,0 @@
-﻿[STYLE_EXPLORER]
-Explorer of worlds_{random}
-Adventure seeker_{N}
-Wanderer_{random}
-Quest master_{N}
-Discovery lover_{random}
-Border crosser_{N}
-

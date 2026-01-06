@@ -1,9 +1,0 @@
-﻿[TIME_MORNING]
-Early bird_{random}
-Morning glory_{N}
-Rise and shine_{random}
-Breakfast champion_{N}
-New day new start_{random}
-Morning warrior_{N}
-Sunrise seeker_{random}
-

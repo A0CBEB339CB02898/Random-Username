@@ -1,9 +1,0 @@
-[TIME_WEEKEND]
-周末的懒人_{random}
-放松身心中_{N}
-闲适悠闲_{random}
-周末小确幸_{N}
-休息的时刻_{random}
-释放压力中_{N}
-周末happy时光_{random}
-

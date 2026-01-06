@@ -1,9 +1,0 @@
-﻿[TIME_NIGHT]
-Night owl_{random}
-Starry dreamer_{N}
-Moonlight wanderer_{random}
-Evening thinker_{N}
-Night warrior_{random}
-Deep sleep lover_{N}
-Midnight reflector_{random}
-

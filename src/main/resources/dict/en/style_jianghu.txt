@@ -1,8 +1,0 @@
-﻿[STYLE_JIANGHU]
-Wandering knight_{random}
-Swordsman_{N}
-Legend maker_{N}
-Hero path_{random}
-Martial artist_{random}
-Code keeper_{N}
-

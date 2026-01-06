@@ -1,8 +1,0 @@
-[STYLE_EXPLORER]
-探索世界的_{random}
-冒险家_{N}
-未知领地开拓者_{random}
-远方的呼唤者_{N}
-漂泊者_{random}
-寻求刺激的灵魂_{N}
-

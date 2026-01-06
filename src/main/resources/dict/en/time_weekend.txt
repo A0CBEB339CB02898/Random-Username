@@ -1,9 +1,0 @@
-﻿[TIME_WEEKEND]
-Weekend relaxer_{random}
-Chill master_{N}
-Fun seeker_{random}
-Party animal_{N}
-Lazy day lover_{random}
-Freedom feeler_{N}
-Weekend warrior_{random}
-

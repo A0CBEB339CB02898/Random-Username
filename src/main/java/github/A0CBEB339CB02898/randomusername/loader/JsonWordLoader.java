@@ -17,17 +17,27 @@ import java.util.Map;
  * JSON词库加载器
  * 从JSON格式文件加载词库配置
  */
-public class JsonWordLoader extends AbstractWordLoader {
+public class JsonWordLoader {
 
     private final Gson gson = new Gson();
 
-    @Override
+    /**
+     * 加载词库
+     * @param path 词库路径
+     * @param language 语言
+     * @return 词库对象
+     * @throws Exception 加载失败时抛出异常
+     */
     public WordBank load(String path, Language language) throws Exception {
         WordBankConfig config = loadConfig(path, language);
         return convertToWordBank(config);
     }
 
-    @Override
+    /**
+     * 获取词库文件的时间戳
+     * @param path 词库路径
+     * @return 时间戳
+     */
     public long getTimestamp(String path) {
         if (path == null || path.isEmpty()) {
             return 0;

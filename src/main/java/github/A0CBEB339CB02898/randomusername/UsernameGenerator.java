@@ -3,10 +3,8 @@ package github.A0CBEB339CB02898.randomusername;
 import github.A0CBEB339CB02898.randomusername.config.GenerationMode;
 import github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
 import github.A0CBEB339CB02898.randomusername.config.Language;
-import github.A0CBEB339CB02898.randomusername.loader.AutoWordLoader;
 import github.A0CBEB339CB02898.randomusername.loader.JsonWordLoader;
 import github.A0CBEB339CB02898.randomusername.loader.WordBankConstants;
-import github.A0CBEB339CB02898.randomusername.loader.WordLoader;
 import github.A0CBEB339CB02898.randomusername.model.WordBank;
 import github.A0CBEB339CB02898.randomusername.strategy.*;
 
@@ -36,7 +34,7 @@ public class UsernameGenerator {
     private final Map<GenerationMode, UsernameStrategy> strategies = new HashMap<>();
     
     /** JSON词库加载器 */
-    private final WordLoader wordLoader = new JsonWordLoader();
+    private final JsonWordLoader wordLoader = new JsonWordLoader();
 
     /**
      * 构造函数，初始化生成策略

@@ -1,9 +1,0 @@
-﻿[TIME_NOON]
-Lunch break lover_{random}
-Noon dreamer_{N}
-Midday napper_{random}
-Golden hour seeker_{N}
-Afternoon energy_{random}
-Siesta fan_{N}
-Sunshine absorber_{random}
-

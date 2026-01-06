@@ -1,9 +1,0 @@
-﻿[TIME_NORMAL]
-平凡的日常_{random}
-普通路人_{N}
-正在努力中_{random}
-日常生活_{N}
-打工人的梦想_{random}
-默默耕耘着_{N}
-奔向未来的人_{random}
-

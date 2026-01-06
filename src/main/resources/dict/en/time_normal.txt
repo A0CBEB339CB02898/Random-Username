@@ -1,9 +1,0 @@
-﻿[TIME_NORMAL]
-Regular person_{random}
-Ordinary life_{N}
-Working hard_{random}
-Daily grind_{N}
-Normal worker_{random}
-Living the dream_{N}
-Moving forward_{random}
-

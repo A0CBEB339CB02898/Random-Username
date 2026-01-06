@@ -1,8 +1,0 @@
-﻿[STYLE_ATTITUDE]
-Attitude king_{random}
-Rebel spirit_{N}
-Unique existence_{random}
-Self made man_{N}
-Unbound soul_{random}
-Confidence maker_{N}
-

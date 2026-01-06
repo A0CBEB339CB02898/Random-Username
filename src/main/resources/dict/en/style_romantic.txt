@@ -1,8 +1,0 @@
-﻿[STYLE_ROMANTIC]
-Romantic dreamer_{random}
-Poetry lover_{N}
-Emotional soul_{random}
-Heart keeper_{N}
-Love believer_{random}
-Beauty chaser_{N}
-
