@@ -122,29 +122,4 @@ public class UsernameGenerator {
             throw new UsernameGeneratorException("从以下路径加载词库失败: " + path, e);
         }
     }
-
-    /**
-     * 清除词库缓存
-     */
-    public void clearCache() {
-        wordBankCache.clear();
-    }
-
-    /**
-     * 重新加载默认词库
-     * @param lang 语言
-     */
-    public void reload(Language lang) {
-        wordBankCache.remove("DEFAULT_" + lang.name());
-    }
-
-    /**
-     * 重新加载指定路径的词库
-     * @param path 词库路径
-     */
-    public void reload(String path) {
-        if (path != null) {
-            wordBankCache.remove(path);
-        }
-    }
 }
