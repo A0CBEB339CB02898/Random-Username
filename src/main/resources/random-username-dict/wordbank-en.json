@@ -31,7 +31,7 @@
     "attitude": {
       "name": "Attitude",
       "adjectives": ["Wild", "Proud", "Untamed", "Bold", "Carefree", "Confident", "Spontaneous", "Resolute"],
-      "nouns": ["Rebel", "Individual", "Lone-wolf", "Maverick", "Renegade", "Revolutionary", "Master", "Believer"],
+      "nouns": ["Rebel", "Individual", "Lone-wolf", "Maverick", "Renegade", "Revolutionary", "Master", "Advocate"],
       "timeAdjectives": {
         "early": ["Fearless-newborn", "Clear-headed", "Awakening", "Unstoppable"],
         "morning": ["Fearless", "Sharp", "Vivid", "Striking"],
@@ -52,7 +52,7 @@
     },
     "romantic": {
       "name": "Romantic",
-      "adjectives": ["Tender", "Dreamy", "Poetic", "Affectionate", "Aesthetic", "Devoted", "Intimate", "Ardent"],
+      "adjectives": ["Tender", "Dreamy", "Poetic", "Warm", "Aesthetic", "Devoted", "Flowing", "Ardent"],
       "nouns": ["Dreamer", "Poet", "Storyteller", "Romantic", "Guardian", "Singer", "Keeper", "Believer"],
       "timeAdjectives": {
         "early": ["Twilight-musing", "Pre-dawn-dreamy", "Misty-gentle", "Waking-tender"],
