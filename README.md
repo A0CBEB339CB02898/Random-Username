@@ -28,7 +28,7 @@
 <dependency>
     <groupId>io.github.a0cbeb339cb02898</groupId>
     <artifactId>random-username</artifactId>
-    <version>2.0.0</version>
+    <version>latest</version>
 </dependency>
 ```
 
