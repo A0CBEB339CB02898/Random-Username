@@ -11,10 +11,10 @@
       "adjectives": ["Happy", "Smart", "Brave", "Creative", "Calm", "Fierce", "Deep", "Nimble", "Steadfast", "Warm"],
       "nouns": ["Youth", "Warrior", "Dreamer", "Adventurer", "Traveler", "Hero", "Poet", "Wanderer", "Rider", "Explorer"],
       "timeAdjectives": {
+        "early": ["Sleepy", "Dreamy", "Fresh", "Quiet"],
         "morning": ["Energetic", "Fresh", "Radiant", "Spirited"],
-        "noon": ["Blazing", "Fiery", "Vibrant", "Lively"],
-        "night": ["Calm", "Profound", "Mysterious", "Quiet"],
-        "weekend": ["Relaxed", "Laid-back", "Comfortable", "Peaceful"]
+        "afternoon": ["Blazing", "Fiery", "Vibrant", "Lively"],
+        "night": ["Calm", "Profound", "Mysterious", "Quiet"]
       }
     },
     "explorer": {
@@ -22,10 +22,10 @@
       "adjectives": ["Curious", "Bold", "Daring", "Expansive", "Passionate", "Persistent", "Resilient", "Visionary"],
       "nouns": ["Adventurer", "Explorer", "Traveler", "Dreamer", "Voyager", "Pioneer", "Navigator", "Pathbreaker"],
       "timeAdjectives": {
+        "early": ["Pre-dawn", "Preparing", "Dreaming", "Hesitant"],
         "morning": ["Ambitious", "Eager", "Ready", "Motivated"],
-        "noon": ["Thrilled", "Determined", "Focused", "Unstoppable"],
-        "night": ["Thoughtful", "Composed", "Methodical", "Peaceful"],
-        "weekend": ["Prepared", "Charged", "Driven", "Ambitious"]
+        "afternoon": ["Thrilled", "Determined", "Focused", "Unstoppable"],
+        "night": ["Thoughtful", "Composed", "Methodical", "Peaceful"]
       }
     },
     "attitude": {
@@ -33,10 +33,10 @@
       "adjectives": ["Wild", "Proud", "Untamed", "Bold", "Carefree", "Confident", "Spontaneous", "Resolute"],
       "nouns": ["Rebel", "Individual", "Lone-wolf", "Maverick", "Renegade", "Revolutionary", "Master", "Believer"],
       "timeAdjectives": {
+        "early": ["Fearless-newborn", "Clear-headed", "Awakening", "Unstoppable"],
         "morning": ["Fearless", "Sharp", "Vivid", "Striking"],
-        "noon": ["Uncompromising", "Powerful", "Impactful", "Fearless"],
-        "night": ["Solitary", "Ruthless", "Mysterious", "Strong"],
-        "weekend": ["Uninhibited", "Free-spirited", "Fearless", "Wild"]
+        "afternoon": ["Uncompromising", "Powerful", "Impactful", "Fearless"],
+        "night": ["Solitary", "Ruthless", "Mysterious", "Strong"]
       }
     },
     "jianghu": {
@@ -44,10 +44,10 @@
       "adjectives": ["Righteous", "Wandering", "Feuding", "Swift", "Bold", "Loyal", "Sword-like", "Melody-hearted"],
       "nouns": ["Knight", "Master", "Swordsman", "Wanderer", "Rogue", "Sword-saint", "Ranger", "Righteous-seeker"],
       "timeAdjectives": {
+        "early": ["Dawn-awakening", "Morning-stirring", "Early-roaming", "Breaking-dawn"],
         "morning": ["Dawn-charging", "Morning-swordsman", "Early-wanderer", "Sky-clearer"],
-        "noon": ["Daytime-fierce", "Midday-rider", "Noon-warrior", "Sunlit-fighter"],
-        "night": ["Starlit-ranger", "Moonlit-swordsman", "Night-walker", "Shadow-knight"],
-        "weekend": ["Leisurely-wanderer", "Relaxed-ranger", "Comfortable-wanderer", "Free-roamer"]
+        "afternoon": ["Daytime-fierce", "Midday-rider", "Noon-warrior", "Sunlit-fighter"],
+        "night": ["Starlit-ranger", "Moonlit-swordsman", "Night-walker", "Shadow-knight"]
       }
     },
     "romantic": {
@@ -55,10 +55,10 @@
       "adjectives": ["Tender", "Dreamy", "Poetic", "Affectionate", "Aesthetic", "Devoted", "Intimate", "Ardent"],
       "nouns": ["Dreamer", "Poet", "Storyteller", "Romantic", "Guardian", "Singer", "Keeper", "Believer"],
       "timeAdjectives": {
+        "early": ["Twilight-musing", "Pre-dawn-dreamy", "Misty-gentle", "Waking-tender"],
         "morning": ["Dawn-musing", "Morning-dreamy", "Sunrise-poetic", "Daybreak-tender"],
-        "noon": ["Midday-thoughtful", "Noon-dreamy", "Afternoon-tender", "Sunlight-warm"],
-        "night": ["Stargazing", "Moonlit-devoted", "Midnight-reminiscing", "Night-whisper"],
-        "weekend": ["Leisurely-romantic", "Relaxed-poetic", "Holiday-dreamy", "Rest-tender"]
+        "afternoon": ["Midday-thoughtful", "Noon-dreamy", "Afternoon-tender", "Sunlight-warm"],
+        "night": ["Stargazing", "Moonlit-devoted", "Midnight-reminiscing", "Night-whisper"]
       }
     }
   }
