@@ -26,9 +26,9 @@ public class GeneratorConfig {
     @Builder.Default
     private Style style = Style.DEFAULT;
 
-    /** 随机后缀长度，默认为 4 */
+    /** 随机后缀长度，默认为 6 */
     @Builder.Default
-    private int suffixLength = 4;
+    private int suffixLength = 6;
 
     /** 注册时间，用于时段形容词识别，默认为当前时间 */
     @Builder.Default
