@@ -1,6 +1,5 @@
 package io.github.A0CBEB339CB02898.randomusername;
 
-import io.github.A0CBEB339CB02898.randomusername.config.GenerationMode;
 import io.github.A0CBEB339CB02898.randomusername.config.GeneratorConfig;
 import io.github.A0CBEB339CB02898.randomusername.config.Language;
 import io.github.A0CBEB339CB02898.randomusername.loader.JsonWordLoader;
@@ -9,7 +8,6 @@ import io.github.A0CBEB339CB02898.randomusername.model.WordBank;
 import io.github.A0CBEB339CB02898.randomusername.strategy.StyleRandomStrategy;
 import io.github.A0CBEB339CB02898.randomusername.strategy.UsernameStrategy;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

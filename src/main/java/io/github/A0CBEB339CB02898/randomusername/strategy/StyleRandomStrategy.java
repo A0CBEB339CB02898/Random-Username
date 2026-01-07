@@ -57,12 +57,12 @@ public class StyleRandomStrategy extends UsernameStrategy {
         if (mode == GenerationMode.ADJ_NOUN_RANDOM) {
             // 形容词 + 名词
             String adjective = selectAdjective(styleWordBank, wordBank, config);
-            String noun = selectNoun(styleWordBank, random);
+            String noun = selectNoun(styleWordBank, wordBank, random);
             return adjective + noun;
 
         } else if (mode == GenerationMode.NOUN_RANDOM) {
             // 仅名词（仅在未启用时段形容词时使用）
-            return selectNoun(styleWordBank, random);
+            return selectNoun(styleWordBank, wordBank, random);
 
         } else {
             throw new UsernameGeneratorException("不支持的生成模式: " + mode);
@@ -116,15 +116,20 @@ public class StyleRandomStrategy extends UsernameStrategy {
      * 选择名词
      * 优先级：风格名词 > 基础名词
      */
-    private String selectNoun(WordBank.StyleWordBank styleWordBank, ThreadLocalRandom random) {
+    private String selectNoun(WordBank.StyleWordBank styleWordBank, WordBank wordBank, ThreadLocalRandom random) {
         // 优先使用风格名词
         List<String> styleNouns = styleWordBank.getNouns();
         if (!styleNouns.isEmpty()) {
             return styleNouns.get(random.nextInt(styleNouns.size()));
         }
 
-        // 理论上这里不应该发生，因为每个风格都应该有名词
-        throw new UsernameGeneratorException("风格词库中缺少名词: " + styleWordBank.getName());
+        // 回退到基础名词
+        List<String> basicNouns = wordBank.getNouns();
+        if (!basicNouns.isEmpty()) {
+            return basicNouns.get(random.nextInt(basicNouns.size()));
+        }
+
+        throw new UsernameGeneratorException("词库中缺少名词");
     }
 
     /**
@@ -160,4 +165,3 @@ public class StyleRandomStrategy extends UsernameStrategy {
         }
     }
 }
-
