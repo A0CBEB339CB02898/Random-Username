@@ -146,31 +146,40 @@ public class JsonWordLoader {
             if (basic.getNouns() != null) {
                 basic.getNouns().forEach(wordBank::addNoun);
             }
-
-            if (basic.getPrefixes() != null) {
-                basic.getPrefixes().forEach(wordBank::addPrefix);
-            }
         }
 
-        // 加载风格模板
+        // 加载风格词库
         if (config.getStyles() != null) {
             for (Map.Entry<String, WordBankConfig.StyleConfig> entry : config.getStyles().entrySet()) {
                 String styleKey = entry.getKey();
-                List<String> templates = entry.getValue().getTemplates();
-                if (templates != null) {
-                    templates.forEach(template -> wordBank.addStyleTemplate(styleKey, template));
-                }
-            }
-        }
+                WordBankConfig.StyleConfig styleConfig = entry.getValue();
 
-        // 加载时间模板
-        if (config.getTimes() != null) {
-            for (Map.Entry<String, WordBankConfig.TimeConfig> entry : config.getTimes().entrySet()) {
-                String timeKey = entry.getKey();
-                List<String> templates = entry.getValue().getTemplates();
-                if (templates != null) {
-                    templates.forEach(template -> wordBank.addTimeTemplate(timeKey, template));
+                // 创建风格词库
+                WordBank.StyleWordBank styleBank = new WordBank.StyleWordBank(styleConfig.getName());
+
+                // 添加形容词
+                if (styleConfig.getAdjectives() != null) {
+                    styleConfig.getAdjectives().forEach(styleBank::addAdjective);
                 }
+
+                // 添加名词
+                if (styleConfig.getNouns() != null) {
+                    styleConfig.getNouns().forEach(styleBank::addNoun);
+                }
+
+                // 添加时段形容词
+                if (styleConfig.getTimeAdjectives() != null) {
+                    for (Map.Entry<String, List<String>> timeEntry : styleConfig.getTimeAdjectives().entrySet()) {
+                        String timeType = timeEntry.getKey();
+                        List<String> adjectives = timeEntry.getValue();
+                        if (adjectives != null) {
+                            adjectives.forEach(adj -> styleBank.addTimeAdjective(timeType, adj));
+                        }
+                    }
+                }
+
+                // 添加到WordBank
+                wordBank.addStyle(styleKey, styleBank);
             }
         }
 
@@ -218,4 +227,3 @@ public class JsonWordLoader {
         return connection;
     }
 }
-

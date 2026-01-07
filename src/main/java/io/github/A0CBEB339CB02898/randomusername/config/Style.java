@@ -7,13 +7,15 @@ import lombok.Getter;
  */
 @Getter
 public enum Style {
+    /** 🎨 默认风格 */
+    DEFAULT("default"),
     /** 🌍 探索者维度 */
     EXPLORER("explorer"),
     /** 🔥 情感与态度维度 */
     ATTITUDE("attitude"),
     /** 🗡️ 江湖/武侠维度 */
     JIANGHU("jianghu"),
-    /** 🎨 意象与浪漫维度 */
+    /** 🎭 意象与浪漫维度 */
     ROMANTIC("romantic");
 
     private final String key;

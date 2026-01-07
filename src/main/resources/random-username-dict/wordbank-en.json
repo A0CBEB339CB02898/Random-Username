@@ -1,49 +1,66 @@
 {
   "language": "en",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "basic": {
-    "adjectives": ["Happy", "Smart", "Brave", "Creative", "Calm"],
-    "nouns": ["Cat", "Dog", "Panda", "Fox", "Dolphin"],
-    "prefixes": ["user_", "cool_", "super_", "smart_"]
+    "adjectives": ["Happy", "Smart", "Brave", "Creative", "Calm", "Fierce", "Deep", "Nimble"],
+    "nouns": ["Youth", "Warrior", "Dreamer", "Adventurer", "Traveler", "Hero", "Poet", "Wanderer"]
   },
   "styles": {
+    "default": {
+      "name": "Default Style",
+      "adjectives": ["Happy", "Smart", "Brave", "Creative", "Calm", "Fierce", "Deep", "Nimble", "Steadfast", "Warm"],
+      "nouns": ["Youth", "Warrior", "Dreamer", "Adventurer", "Traveler", "Hero", "Poet", "Wanderer", "Rider", "Explorer"],
+      "timeAdjectives": {
+        "morning": ["Energetic", "Fresh", "Radiant", "Spirited"],
+        "noon": ["Blazing", "Fiery", "Vibrant", "Lively"],
+        "night": ["Calm", "Profound", "Mysterious", "Quiet"],
+        "weekend": ["Relaxed", "Laid-back", "Comfortable", "Peaceful"]
+      }
+    },
     "explorer": {
       "name": "Explorer",
-      "templates": ["Explorer of worlds_{random}", "Adventure seeker_{N}"]
+      "adjectives": ["Curious", "Bold", "Daring", "Expansive", "Passionate", "Persistent", "Resilient", "Visionary"],
+      "nouns": ["Adventurer", "Explorer", "Traveler", "Dreamer", "Voyager", "Pioneer", "Navigator", "Pathbreaker"],
+      "timeAdjectives": {
+        "morning": ["Ambitious", "Eager", "Ready", "Motivated"],
+        "noon": ["Thrilled", "Determined", "Focused", "Unstoppable"],
+        "night": ["Thoughtful", "Composed", "Methodical", "Peaceful"],
+        "weekend": ["Prepared", "Charged", "Driven", "Ambitious"]
+      }
     },
     "attitude": {
       "name": "Attitude",
-      "templates": ["Attitude king_{random}", "Rebel spirit_{N}"]
+      "adjectives": ["Wild", "Proud", "Untamed", "Bold", "Carefree", "Confident", "Spontaneous", "Resolute"],
+      "nouns": ["Rebel", "Individual", "Lone-wolf", "Maverick", "Renegade", "Revolutionary", "Master", "Believer"],
+      "timeAdjectives": {
+        "morning": ["Fearless", "Sharp", "Vivid", "Striking"],
+        "noon": ["Uncompromising", "Powerful", "Impactful", "Fearless"],
+        "night": ["Solitary", "Ruthless", "Mysterious", "Strong"],
+        "weekend": ["Uninhibited", "Free-spirited", "Fearless", "Wild"]
+      }
     },
     "jianghu": {
       "name": "Jianghu",
-      "templates": ["Wandering swordsman_{random}", "Honor keeper_{N}"]
+      "adjectives": ["Righteous", "Wandering", "Feuding", "Swift", "Bold", "Loyal", "Sword-like", "Melody-hearted"],
+      "nouns": ["Knight", "Master", "Swordsman", "Wanderer", "Rogue", "Sword-saint", "Ranger", "Righteous-seeker"],
+      "timeAdjectives": {
+        "morning": ["Dawn-charging", "Morning-swordsman", "Early-wanderer", "Sky-clearer"],
+        "noon": ["Daytime-fierce", "Midday-rider", "Noon-warrior", "Sunlit-fighter"],
+        "night": ["Starlit-ranger", "Moonlit-swordsman", "Night-walker", "Shadow-knight"],
+        "weekend": ["Leisurely-wanderer", "Relaxed-ranger", "Comfortable-wanderer", "Free-roamer"]
+      }
     },
     "romantic": {
       "name": "Romantic",
-      "templates": ["Romantic dreamer_{random}", "Feeling keeper_{N}"]
-    }
-  },
-  "times": {
-    "morning": {
-      "name": "Morning",
-      "templates": ["Early bird_{random}", "Morning glory_{N}"]
-    },
-    "noon": {
-      "name": "Noon",
-      "templates": ["Noon relaxer_{random}", "Lunch lover_{N}"]
-    },
-    "night": {
-      "name": "Night",
-      "templates": ["Night walker_{random}", "Star gazer_{N}"]
-    },
-    "weekend": {
-      "name": "Weekend",
-      "templates": ["Weekend warrior_{random}", "Lazy saturday_{N}"]
-    },
-    "normal": {
-      "name": "Normal",
-      "templates": ["Ordinary person_{random}", "Daily grinder_{N}"]
+      "adjectives": ["Tender", "Dreamy", "Poetic", "Affectionate", "Aesthetic", "Devoted", "Intimate", "Ardent"],
+      "nouns": ["Dreamer", "Poet", "Storyteller", "Romantic", "Guardian", "Singer", "Keeper", "Believer"],
+      "timeAdjectives": {
+        "morning": ["Dawn-musing", "Morning-dreamy", "Sunrise-poetic", "Daybreak-tender"],
+        "noon": ["Midday-thoughtful", "Noon-dreamy", "Afternoon-tender", "Sunlight-warm"],
+        "night": ["Stargazing", "Moonlit-devoted", "Midnight-reminiscing", "Night-whisper"],
+        "weekend": ["Leisurely-romantic", "Relaxed-poetic", "Holiday-dreamy", "Rest-tender"]
+      }
     }
   }
 }
+

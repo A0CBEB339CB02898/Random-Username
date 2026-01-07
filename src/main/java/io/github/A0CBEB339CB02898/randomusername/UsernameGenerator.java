@@ -6,9 +6,7 @@ import io.github.A0CBEB339CB02898.randomusername.config.Language;
 import io.github.A0CBEB339CB02898.randomusername.loader.JsonWordLoader;
 import io.github.A0CBEB339CB02898.randomusername.loader.WordBankConstants;
 import io.github.A0CBEB339CB02898.randomusername.model.WordBank;
-import io.github.A0CBEB339CB02898.randomusername.strategy.*;
-import io.github.A0CBEB339CB02898.randomusername.strategy.SimpleRandomStrategy;
-import io.github.A0CBEB339CB02898.randomusername.strategy.TemplateBasedStrategy;
+import io.github.A0CBEB339CB02898.randomusername.strategy.StyleRandomStrategy;
 import io.github.A0CBEB339CB02898.randomusername.strategy.UsernameStrategy;
 
 import java.util.HashMap;
@@ -17,7 +15,11 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 用户名生成器主类
- * 提供多种生成模式，支持中英文，可配置外部词库
+ * 提供两种生成模式，支持中英文，可配置外部词库
+ *
+ * 生成格式：
+ * 1. ADJ_NOUN_RANDOM: 形容词 + 名词 + 随机后缀 (如：勇敢的冒险者_aBc2)
+ * 2. NOUN_RANDOM: 名词 + 随机后缀 (如：冒险家_xY9k)
  */
 public class UsernameGenerator {
     /** 缓存项，包含词库和时间戳 */
@@ -33,25 +35,11 @@ public class UsernameGenerator {
 
     /** 词库缓存 */
     private final Map<String, CacheEntry> wordBankCache = new ConcurrentHashMap<>();
-    /** 策略映射，按生成模式分类 */
-    private final Map<GenerationMode, UsernameStrategy> strategies = new HashMap<>();
-    
+    /** 统一的生成策略 */
+    private final UsernameStrategy strategy = new StyleRandomStrategy();
+
     /** JSON词库加载器 */
     private final JsonWordLoader wordLoader = new JsonWordLoader();
-
-    /**
-     * 构造函数，初始化生成策略
-     */
-    public UsernameGenerator() {
-        // 基础随机策略：0=PREFIX_ONLY, 1=ADJ_NOUN, 2=NOUN_ONLY
-        this.strategies.put(GenerationMode.PREFIX_RANDOM, new SimpleRandomStrategy(0));
-        this.strategies.put(GenerationMode.ADJ_NOUN_RANDOM, new SimpleRandomStrategy(1));
-        this.strategies.put(GenerationMode.NOUN_RANDOM, new SimpleRandomStrategy(2));
-
-        // 模板策略
-        this.strategies.put(GenerationMode.TIME_BASED, new TemplateBasedStrategy(true));
-        this.strategies.put(GenerationMode.STYLE_BASED, new TemplateBasedStrategy(false));
-    }
 
     /**
      * 根据给定配置生成用户名
@@ -62,10 +50,6 @@ public class UsernameGenerator {
     public String generate(GeneratorConfig config) {
         try {
             WordBank wordBank = getWordBank(config);
-            UsernameStrategy strategy = strategies.get(config.getMode());
-            if (strategy == null) {
-                throw new IllegalArgumentException("Unsupported generation mode: " + config.getMode());
-            }
             return strategy.generate(wordBank, config);
         } catch (UsernameGeneratorException e) {
             throw e;

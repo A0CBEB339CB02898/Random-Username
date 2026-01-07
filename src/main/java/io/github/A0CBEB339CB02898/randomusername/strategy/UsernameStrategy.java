@@ -44,32 +44,4 @@ public abstract class UsernameStrategy {
         }
         return sb.toString();
     }
-
-    /**
-     * 替换模板中的占位符（兼容模式）
-     * 并根据配置自动追加随机后缀
-     * @param template 模板字符串
-     * @param config 生成配置
-     * @return 最终生成的用户名
-     */
-    protected String processTemplate(String template, GeneratorConfig config) {
-        if (template == null) return "";
-        String result = template;
-        
-        // 1. 基础替换（如果词库中仍残留占位符，进行清理）
-        result = result.replace("{N}", "").replace("{random}", "").replace("xxxx", "");
-        
-        // 2. 自动追加随机后缀（基于配置）
-        String randomStr = generateRandomString(config.getRandomLength(), config.isUseNumbers(), config.isUseLetters());
-        if (!randomStr.isEmpty()) {
-            // 如果结果已经包含连接符或特殊字符，直接拼接，否则加下划线
-            if (result.endsWith("_") || result.endsWith("-")) {
-                result += randomStr;
-            } else {
-                result += "_" + randomStr;
-            }
-        }
-        
-        return result;
-    }
 }

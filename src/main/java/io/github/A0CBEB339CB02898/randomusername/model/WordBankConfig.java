@@ -23,11 +23,8 @@ public class WordBankConfig {
     /** 基础词库 */
     private BasicWords basic;
 
-    /** 风格模板 */
+    /** 风格词库 */
     private Map<String, StyleConfig> styles;
-
-    /** 时间模板 */
-    private Map<String, TimeConfig> times;
 
     /**
      * 基础词库
@@ -39,9 +36,6 @@ public class WordBankConfig {
 
         /** 名词列表 */
         private List<String> nouns;
-
-        /** 前缀列表 */
-        private List<String> prefixes;
     }
 
     /**
@@ -58,26 +52,13 @@ public class WordBankConfig {
         /** 风格表情符号 */
         private String emoji;
 
-        /** 模板列表 */
-        private List<String> templates;
-    }
+        /** 风格形容词列表 */
+        private List<String> adjectives;
 
-    /**
-     * 时间配置
-     */
-    @Data
-    public static class TimeConfig {
-        /** 时间段名称 */
-        private String name;
+        /** 风格名词列表 */
+        private List<String> nouns;
 
-        /** 时间范围（如 "06:00-10:00"） */
-        private String timeRange;
-
-        /** 时间段描述 */
-        private String description;
-
-        /** 模板列表 */
-        private List<String> templates;
+        /** 时段形容词映射 */
+        private Map<String, List<String>> timeAdjectives;
     }
 }
-
